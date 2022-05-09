@@ -1,0 +1,22 @@
+:root {
+    --primary-color: #45ca24;
+    --primary-color-dark: #299e0c;
+    --bg-color: #F2F3F5;
+    --text-color: #666666;
+    --light-color: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: var(--text-color);
+}
+
+html {
+    height: 100%;
+}
+
+
+

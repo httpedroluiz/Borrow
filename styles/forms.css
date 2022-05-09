@@ -1,0 +1,159 @@
+body {
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-weight: 300;
+}
+
+form {
+    background: var(--light-color);
+    
+    width: 100%;
+    max-width: 500px;
+
+    margin: 32px auto;
+    padding: 32px 64px;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+}
+
+form h1 {
+    margin-bottom: 32px;
+}
+
+div.input {
+    margin-bottom: 24px;
+    position: relative;
+    color: var(--text-color);
+}
+
+input,
+button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+
+    width: 100%;
+
+    padding: 16px 0;
+
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+
+    background-color: transparent;
+
+    outline: none;
+
+    color: var(--text-color);
+    font-size: 1em;
+}
+
+button {
+    margin-top: 16px;
+    background-color: var(--primary-color);
+
+    border: 0;
+    border-radius: 6px;
+
+    color: var(--light-color);
+    cursor: pointer;
+
+    font-weight: 700;
+}
+
+#a {
+    margin-left: 0.3em;
+}
+
+.a {
+    margin-top: 1em;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+
+    font-weight: 300;
+}
+
+.nav-links a {
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.a a {
+    font-weight: 500;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+input ~ label {
+    position: absolute;
+    top: 16px;
+    left: 0;
+
+    color: var(--text-color);
+
+    transition: .4s;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    color: var(--text-color);
+}
+
+.input-span {
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+}
+
+button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.notification-error {
+    margin-bottom: 10px;
+    width: 100%;
+
+    padding: 16px 0;
+
+    border: 1px solid red;
+    border-radius: 6px;
+
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.notification-error p, 
+.notification-error a {
+    color: red;
+}
+
+.notification-success {
+    margin-bottom: 10px;
+    width: 100%;
+
+    padding: 16px 0;
+
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+
+    text-align: center;
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.notification-success p,
+.notification-success a{
+    color: var(--primary-color); 
+}
